@@ -1,0 +1,437 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand";
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(223, 221, 221);
+    padding: 15px;
+}
+
+header .title{
+    display: flex;
+    font-size: 2rem;
+}
+header nav{
+    font-size: 1.3em;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar a , header .title a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+header{
+    height: 4.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+main .content{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    height: 41rem;
+    align-items: center;
+    gap: 8rem;
+    background-image: url("../background.jpg");
+    background-size: cover;
+    
+}
+
+main .content .content-nama, .sosial-media , .right-content{
+    max-width: 40rem;
+}
+
+main .content .content-nama h1,h2{
+    font-size: 2.5rem;
+    text-shadow: 5px 2px 5px rgb(136, 95, 95);
+}
+main .content .content-nama p{
+    font-size: 2rem;
+    text-shadow: 5px 2px 5px rgb(136, 95, 95);
+}
+
+main .content .left-content { 
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .left-content .content-nama button{
+    padding: 1em;
+    border: 3px solid transparent;
+    border-radius: 555px;
+    margin-block-start: 1rem;
+    background-color: rgb(69, 60, 77);
+    cursor: pointer;
+    color: white;
+}
+main .content .left-content .content-nama button:hover{
+    border: 3px solid #000000;
+    background-color: transparent;
+    color: #060606;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgb(136, 95, 95);
+}
+
+main .content .sosial-media ul{
+    display: flex;
+    gap: 20px;
+}
+
+main .content .sosial-media ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+main .content .sosial-media ul li a img{
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+main .content .sosial-media ul .wa a img:hover{
+    background-color: #25d366;
+    border-radius: 6px;
+    transform: scale(1.2) rotate(10deg);
+}
+main .content .sosial-media ul .github a img:hover{
+    background-color: #ffffff;
+    border-radius: 6px;
+    transform: scale(1.2) rotate(10deg);
+}
+main .content .sosial-media ul .linked a img:hover{
+    background-color: #0011ff;
+    border-radius: 6px;
+    transform: scale(1.2) rotate(10deg);
+}
+
+main .content .content-foto img{
+    width: 20rem;
+}
+/* content 2 */
+
+main .content-dua{
+    width: 100%;
+    height: 37rem;
+    background-color: #7d7c7d;
+}
+
+main .content-dua .title-skil{
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+}
+
+main .content-dua .title-skil h1{
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+main .content-dua .content-card{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+main .content-dua .content-card .card{
+    border: solid 1px black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content-dua .content-card .card .content-all-card{
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 115px;
+}
+
+main .content-dua .content-card .card .image-satu,.image-dua,.image-tiga,.title-empat{
+    height: 200px;
+    padding: 2rem;
+    background-color: #aaa;
+}
+
+main .content-dua .content-card .card .title-empat{
+    display: flex;
+    align-items: center;
+}
+
+main .content-dua .content-card .card .content-all-card button{
+    padding: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-block-start: 1rem;
+    background-color: rgb(69, 60, 77);
+    cursor: pointer;
+    color: white;
+    font-size: small;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+main .content-dua .content-card .card .content-all-card button:hover{
+    flex-direction: column;
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #060606;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgb(136, 95, 95);
+}
+
+main .content-dua .content-card .satu:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+main .content-dua .content-card .dua:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+main .content-dua .content-card .tiga:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+main .content-dua .content-card .empat:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+/* content pengalman */
+
+main .content-tiga{
+    background-color: #919191;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 37rem;
+    align-items: center;
+}
+
+main .content-tiga .all-pengalaman{
+    background-color:#5f555e ;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 1px 3px 2px black;
+}
+main .content-tiga .all-pengalaman div h1{
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+main .content-tiga .all-pengalaman .p-content{
+    box-shadow: -18px 14px 35px -6px rgba(0,0,0,0.82);
+-webkit-box-shadow: -18px 14px 35px -6px rgba(0,0,0,0.82);
+-moz-box-shadow: -18px 14px 35px -6px rgba(0,0,0,0.82);
+    background-color: rgb(183, 176, 176);
+    height: 23rem;
+    border-radius: 20px;
+    border: 3px solid black;
+    padding: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+main .content-tiga .all-pengalaman .p-content .p-card{
+    padding: 15px;
+}
+
+aside div h1,figure figcaption{
+    display: flex;
+    justify-content: center;
+}
+aside{
+    box-shadow: 1px 1px 1px 1px black;
+    height: 27.5rem;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #bcbaba;
+}
+aside:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+#alertButton{
+    padding: 0.5em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-block-start: 1rem;
+    background-color: rgb(69, 60, 77);
+    cursor: pointer;
+    color: white;
+    font-size: small;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#alertButton:hover{
+    flex-direction: column;
+    border: 1px solid #000000;
+    background-color: transparent;
+    color: #060606;
+    font-weight: bold;
+    text-shadow: 5px 2px 5px rgb(136, 95, 95);
+}
+
+footer{
+    height: 120px;
+    background-color: rgb(75, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer section p{
+    color: white;
+}
+
+
+@media (max-width:753px){
+
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+        height: 4.5rem;
+    }
+    main .content{
+        gap: 1rem;
+        /* width: 41rem; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .content .right-content .content-foto img{
+        margin-top: 0.1rem;
+        width: 15rem;
+    }
+    main .content .left-content{
+        display: flex;
+        gap: 0px;
+    }
+    main .content .left-content .content-nama,.sosial-media{
+        max-width: 30rem;
+    }
+    main .content .content-nama h1,h2{
+        font-size: 1.5rem;
+        text-shadow: 5px 2px 5px rgb(136, 95, 95);
+    }
+    main .content .content-nama p{
+        font-size: 1.8rem;
+        text-shadow: 5px 2px 5px rgb(136, 95, 95);
+    }
+    main .content .left-content .content-nama button{
+        padding: 0.5em;
+        border: 3px solid transparent;
+        border-radius: 333px;
+        margin-block-start: 0.5rem;
+        background-color: rgb(69, 60, 77);
+        cursor: pointer;
+        font-size: small;
+        color: white;
+        -webkit-border-radius: 333px;
+        -moz-border-radius: 333px;
+        -ms-border-radius: 333px;
+        -o-border-radius: 333px;
+}
+    main .content .left-content .content-nama button:hover{
+        border: 3px solid #000000;
+        background-color: transparent;
+        color: #060606;
+        font-weight: bold;
+        text-shadow: 5px 2px 5px rgb(136, 95, 95);
+    }
+
+    main .content-dua{
+        height: 54rem;
+    }
+
+    main .content-dua .content-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .content-tiga{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 536px) {
+        main .content-tiga{
+            height:65rem;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 1027px){
+    main .content{
+        gap: 5px;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Tugas Akhir</title>
+</head>
+<body>
+    <header>
+        <h1 class="title"><a href="#">Lukmanul Hakim</a></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Skil">Skil</a></li>
+                <li><a href="#Pengalaman">Pengalaman</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="left-content">
+                <article class="content-nama">
+                    <h1>Hallo!!</h1>
+                    <h2>I'am Web Developer</h2>
+                    <p>Saya Lukman seorang Web Developer</p>
+                    <button id="profil">Tentang Saya</button>
+                </article>
+                <article class="sosial-media">
+                    <ul>
+                        <li class="wa"><a href="https://wa.me/6285624243082"><img src="../assets/wa.png" alt=""></a></li>
+                        <li class="linked"><a href="https://www.linkedin.com/in/lukmanul-hakim-607a80290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src="../assets/linked.svg" alt="linkedin--v2"/></a></li>
+                        <li class="github"><a href=""><img src="../assets/github.svg" alt=""></a></li>
+                    </ul>
+                </article>
+            </div>
+            <div class="right-content">
+                <article class="content-foto">
+                    <img src="assets/fotome.png" alt="profil">
+                </article>
+            </div>
+        </section>
+
+        <!-- content dua -->
+
+        <section class="content-dua">
+            <div class="title-skil">
+                <h1 id="Skil">Skil</h1>
+            </div>
+            <article class="content-card">
+                <div class="card satu">
+                    <div class="image-satu">
+                        <img width="100px" src="../assets/html-logo.png" alt="">
+                    </div>
+                    <div class="content-all-card">  
+                        <h1>Html</h1>
+                        <button onclick="navigate('../skill/halHtml.html')">Klik</button>
+                    </div>
+                </div>
+                <div class="card dua">
+                    <div class="image-dua">
+                        <img width="100px" src="../assets/css-logo.png" alt="">
+                    </div>
+                    <div class="content-all-card">  
+                        <h1>Css</h1>
+                        <button onclick="navigate('../skill/halCss.html')" >Klik</button>
+                    </div>
+                </div>
+                <div class="card tiga">
+                    <div class="image-tiga">
+                        <img width="150px" src="../assets/c-plus-plus-2048.png" alt="">
+                    </div>
+                    <div class="content-all-card">  
+                        <h1>C++</h1>
+                        <button onclick="navigate('../skill/halC++.html')">Klik</button>
+                    </div>
+                </div>
+                </div>
+                <div class="card empat">
+                    <div class="title-empat">
+                        <h1>Lainnya</h1>
+                    </div>
+                    <div class="content-all-card">  
+                        <h1>Skil Lainnya</h1>
+                        <button onclick="navigate('../skill/lainnya.html')">Klik</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- content tiga -->
+        <section class="content-tiga">
+            <article class="all-pengalaman">
+                <div id="Pengalaman">
+                    <h1>Pengalaman</h1>
+                </div>
+                    <div class="p-content">
+                        <div class="p-card">
+                            <ol>
+                                <li><strong>Pernah PKL di PT.master media</strong></li>
+                                <p>Merakit pc,penginstalan windows dll</p>
+                                <li><strong>Ikut Organisasi Himakom</strong></li>
+                                <p>pernah membuat website dibagian FAQ,pernah menjadi MC diacara studi banding</p>
+                                <li><strong>presentasi Projek C++</strong></li>
+                                <p>Mempresentasikan bahasa program c++ yang telah di buat matkul AP(Algoritma Pemrograman) dan saat pelantikan Himakom</p>
+                            </ol>
+                        </div>
+                    </div>
+            </article>
+            <aside>
+                <div>
+                    <h1>Profil</h1>
+                    <figure>
+                        <img width="200px" src="../assets/fotome.png" alt="foto saya">
+                        <figcaption>Foto Saya</figcaption>
+                    </figure>
+                </div>
+                <table>
+                    <tr>
+                        <th>Nama :</th>
+                        <td>Lukmanul Hakim</td>
+                    </tr>
+                    <tr>
+                        <th>tgl lahir:</th>
+                        <td>06 Maret 2005</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat :</th>
+                        <td>Kuningan</td>
+                    </tr>
+                    <tr>
+                        <th>status :</th>
+                        <td>Mahasiswa</td>
+                    </tr>
+                </table>
+                <button id="alertButton">Tentang Saya</button>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>&copy; 2024 Lukmanul Hakim</p>
+        </section>
+    </footer>
+
+    <script src="../assets/main.js"></script>
+</body>
+</html>
